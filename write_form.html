@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h2글쓰기, initial-scale=1.0">
+    <title>게시판 글쓰기</title>
+</head>
+<body>
+    <h2>글쓰기</h2> 
+    <form action="wirte.jsp">
+        <p>
+            <input type="text" name="title"
+            placeholder="제목을 입력하세요" height="">
+        </p>
+        <p>
+            <textarea name="content" rows="5" cols="40" placeholder="내용을 입력하세요"
+            required></textarea>
+        </p>
+        <p>
+            <input type="file" name="uploadFile">
+        </p>
+        <input type="submit" value="업로드">
+        <input type="reset" value="취소">
+    </form>
+</body>
+</html>
