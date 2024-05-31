@@ -1,0 +1,9 @@
+ul li{
+    list-style: none;
+    line-height: 2;
+}
+
+ol li{
+    line-height: 2;
+    list-style: lower-roman;
+}

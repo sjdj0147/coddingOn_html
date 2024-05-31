@@ -1,0 +1,20 @@
+p{
+    /* text-align: center; */
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.p1{
+    color:blue;
+}
+
+.p2{
+    color: red;
+    font-family:바탕;
+}
+
+.coffee{
+    color: black;
+    font-weight: bold;
+    
+}
