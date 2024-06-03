@@ -1,0 +1,28 @@
+div{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    background: url("../images/background-1193727_1280.png");
+}
+
+#bg1{
+    background-size: auto;
+}
+
+#bg2{
+    background-size: 300px;
+}
+
+#bg3{
+    background-size: 80%;
+}
+
+/* 이미지가 비율만큼 축소되어 보임 */
+#bg4{
+    background-size: contain;
+}
+
+/* 이미지를 박스크기만큼 꽉 채우고  */
+#bg5{
+    background-size: cover;
+}
