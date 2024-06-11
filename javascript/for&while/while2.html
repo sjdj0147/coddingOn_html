@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // 1부터 10까지의 합계 구하기
+    let n = 0;
+    let sum_v = 0;
+
+    while(true){ 
+        n++;
+        if(n > 10)
+            break;  //빠져 나옴.
+        sum_v += n;
+        console.log(n); 
+    }
+    document.write("<br>합계 : " + sum_v);
+
+    while(true){
+      var key = prompt("계속 반복할까요?", "y/n");
+      
+      if(key == 'y' || key == 'Y'){
+          alert("계속 반복합니다.");
+      }else if(key == 'n' || key == 'N'){
+          alert("반복을 중단합니다.");
+          break;
+      }else{
+          alert("키를 잘못 눌렀습니다.");
+      }
+    }
+    document.write("프로그램 종료!!");
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

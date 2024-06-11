@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #wrap{
+        width: 800px;
+        margin: 50px auto;
+    }
+    form{
+        width: 500px;
+        margin: 0 auto;
+    }
+    legend{margin: 10px;}
+    select{width: 150px; height: 25px; margin: 10px;}
+    input[type='submit']{
+        padding: 5px 10px;
+        cursor: pointer;  /* 마우스포인터 - 손모양  */
+    }
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <form action="/cars" method="post">
+      <fieldset>
+        <legend>신차</legend>
+        <label for="cars">차량 선택: </label>
+        <select id="cars" name="cars">
+            <!-- optgroup 태그-관련 옵션을 그룹화한 태그임 -->
+            <optgroup label="현대자동차">
+                <option value="IONIQ5">IONIQ5</option>
+                <option value="SONATA">SONATA</option>
+                <option value="SANTAFE">SANTAFE</option>
+            </optgroup>
+            <optgroup label="기아자동차">
+                <option value="MORNING">MORNING</option>
+                <option value="K7">K7</option>
+                <option value="EV6">EV6</option>
+            </optgroup>
+        </select>
+      </fieldset>
+      <p><input type="submit" value="전송"></p>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .tr1{
+        width: 100px;
+        height: 100px;
+        background-color: #0f0;
+        position: absolute;
+        top: 100px;
+        left: 150px;
+
+        transition-property: width, height, transform;
+        transition-duration: 1s, 2s, 3s;
+    }
+    .tr1:hover{
+        width: 140px;
+        height: 140px;
+        transform: rotate(180deg);
+    }
+</style>
+</head>
+<body>
+    <div class="tr1"></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style> 
+    #wrap {
+      width: 200px;
+      border: 1px solid #222;
+      background-color:#eee;
+      display: flex;
+      /* nowrap - 플렉스 컨테이너를 벗어나도 무시함 
+         wrap - 플렉스 컨테이너를 벗어나면 줄바꿈함
+         wrap - 플렉스 컨테이너를 벗어나면 wrap의 역방향으로 줄바꿈함
+      */
+      /* flex-wrap: nowrap; */
+      flex-wrap: wrap;
+    }
+    #wrap div {
+      width: 100px;
+      margin: 5px;
+      padding: 5px 20px;
+    }
+</style>
+</head>
+<body>
+  <h1>The flex-wrap 속성</h1>
+  <div id="wrap">
+      <div style="background-color:coral;"><p>A</p></div>
+      <div style="background-color:lightblue;"><p>B</p></div>
+      <div style="background-color:khaki;"><p>C</p></div>
+      <div style="background-color:pink;"><p>D</p></div>
+  </div>
+</body>
+</html>

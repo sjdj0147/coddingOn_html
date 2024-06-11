@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 모바일 기준*/
+    *{margin: 0; padding: 0;}
+    #container{width: 100%; margin:0 auto; background-color: #f00;}
+    #container h1{font-size: 2em;}
+    header{height: 100px; border: 1px solid #fff; color: #fff; padding: 10px;}
+    section{height: 600px; border: 1px solid #fff; color: #fff; padding: 10px;}
+    footer{height: 100px; border: 1px solid #fff; color: #fff; padding: 10px;}
+
+    /* 태블릿 기준 */
+    @media screen and (min-width: 780px){
+        #container{width: 100%; margin:0 auto; background-color: #0f0;}
+    }
+
+    /* PC 기준 */
+    @media screen and (min-width: 1024px) {
+        #container{width: 1000px; margin:0 auto; background-color: #00f;}
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <header>
+        <h1>Header</h1>
+    </header>
+    <section>
+        <h1>Section</h1>
+    </section>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>표 만들기</title>
+  <style>
+    table{
+        width: 250px;
+        border: 2px solid #ccc;
+        border-collapse: collapse;
+    }
+    table th, td{
+        border: 1px solid #ccc;
+        height: 30px;
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <h3>로그인 폼</h3>
+    <table>
+        <tr>
+            <td>아이디</td>
+            <td width="150"></td>
+        </tr>
+        <tr>
+            <td>비밀번호</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">로그인</td>
+        </tr>
+    </table>
+    <hr>
+
+    <table>
+        <caption>메뉴판</caption>
+        <tr>
+            <th>분류</th>
+            <th>음식</th>
+        </tr>
+        <tr>
+            <td rowspan="2">한식</td>
+            <td>된장찌게</td>
+        </tr>
+        <tr>
+            <td>김치찌게</td>
+        </tr>
+        <tr>
+            <td rowspan="2">분식</td>
+            <td>라면</td>
+        </tr>
+        <tr>
+            <td>김밥</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* CSS 가상 요소는 선택자로 선택한 요소의 뒤에 붙여 표기하는 
+      미리 약속된 키워드를 말합니다. 
+      ::before - 요소 내용 앞에 새 컨텐츠를 추가  
+      ::after  - 요소 내용 뒤에 새 컨텐츠를 추가  
+     */
+    .goods{width: 600px; margin: 0 auto;}
+    h2::before{
+      content: "신상품";  /* li 요소 뒤에 NEW가 위치함  */
+      background-color: blue;
+      color: #f2f2f2;
+      border-radius: 2px;
+      font-size: 0.8em;  /* 1em(이엠) - 16px * 0.8 */
+      padding: 3px;
+      margin: 0 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="goods">
+    <h2>상품 목록</h2>
+  </div>
+</body>
+</html>

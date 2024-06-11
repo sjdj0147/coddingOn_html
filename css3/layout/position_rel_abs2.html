@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #wrap{
+      width: 200px;
+      height: 200px;
+      border: 1px solid #444;
+      position: relative;
+    }
+    #wrap div{
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background: #0094ff;
+    }
+    #xy1{top: 0; left: 0;}
+    #xy2{top: 0; right: 0;}
+    #xy3{bottom: 0; left: 0;}
+    #xy4{bottom: 0; right: 0;}
+    #xy5{top: 100px; left: 250px;}
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="xy1"></div>
+    <div id="xy2"></div>
+    <div id="xy3"></div>
+    <div id="xy4"></div>
+    <div id="xy5">item</div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+  <div id="content">
+    <img src="images/latte_sm.jpg" id="cup">		
+  </div>
+
+  <script>
+    let cup = document.querySelector("#cup");
+
+    /*cup.onclick = changePic;
+
+    function changePic(){
+        cup.src = "./images/berry_sm.jpg";
+    }*/
+
+    // cup.onclick = function(){
+    //     cup.src = "./images/berry_sm.jpg"; 
+    // }
+
+    //toggle
+    let sw = true;
+    cup.onclick = () => {
+      if(sw){
+        cup.src = "./images/berry_sm.jpg";
+        sw = false;
+      }else{
+        cup.src = "./images/latte_sm.jpg";
+        sw = true;
+      }
+    }
+  </script>
+</body>
+</html>

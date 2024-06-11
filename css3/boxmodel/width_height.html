@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 브라우저에는 기본 margin이 8px 설정되어 있음
+       top, right, bottom, left에 각각 설정됨
+    */
+    body{margin: 0;}
+    .box1{
+      /* 고정크기(px) */
+        width: 400px;
+        height: 100px;
+        background-color: orange;
+        margin-bottom: 10px;
+    }
+    .box2{
+      /*단위 - 가변크기(%): 브라우저 너비의 50% */
+      width: 50%;  
+      height: 100px;
+      background-color: green;
+    }
+</style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+</body>
+</html>

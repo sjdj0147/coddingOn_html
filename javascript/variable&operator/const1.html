@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // let MONTH = 12;
+    const MONTH = 12;
+  
+    // MONTH = 13;  //변경할 수 없음
+
+    document.write("1년은 " + MONTH + "달이 있습니다.");
+
+    //원의 넓이
+    const PI = 3.14;
+    let radius, area;
+    radius = 4;
+    //PI = 2.5    //상수이므로 변경할 수 없음.
+
+    //연산
+    area = PI * radius * radius;
+
+    document.write("원의 넓이 : " + area);
+
+    
+  </script>
+</head>
+<body>
+  <h3>공의 속도(구속) 변환 프로그램</h3>
+  <p>공의 속도 km를 mile로 변환하는 프로그램입니다.</p>
+  <script>
+    const RATE_KPH_MPH = 1.609;  //변환율
+    let mph, kph;
+
+    //입력
+    kph = prompt("당신의 구속을 입력하세요(km/h) : ", "100");
+    kph = parseFloat(kph);
+
+    //연산
+    mph = kph / RATE_KPH_MPH;
+
+    //출력
+    document.write(kph + "km는 " + mph.toFixed(2) + "mile입니다.");
+    //document.write(kph + "km는 " + Math.floor(mph) + "mile입니다.");
+    //mph.toFixed(2) - 소수 둘째자리 설정
+  </script>
+</body>
+</html>

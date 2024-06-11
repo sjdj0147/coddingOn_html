@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* 공통 스타일 */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+#container{width: 100%;}
+
+/* header 스타일 */
+header{width: 100%; height: 320px;}
+header nav{height: 60px; background: #000;}
+nav #main-nav{list-style: none; text-align: center;} 
+nav #main-nav li{display: inline-block; line-height: 60px; 
+  margin: 0 30px;}
+nav #main-nav li a{text-decoration: none; color: white;}
+nav #main-nav li a:hover{color: orange;}
+#main-pic img{width: 100%; height: 260px;}
+
+/* section 영역 */
+section{height: 320px; padding: 15px 5%}
+section:nth-of-type(2n){background: #eee;}
+section .page-title{margin: 20px 0;}
+section p{line-height: 3;}
+section .content .photo{display: none;}
+#choice .content h2{margin-bottom: 20px;}
+#choice .content ol{padding-left: 30px;}
+#choice .content ol li{line-height: 2;}
+
+/* footer 스타일 */
+footer{height: 80px; border-top: 2px solid #222;}
+#bottom-menu{list-style: none; margin: 10px 10px 10px 40px;}
+#bottom-menu li{display: inline-block; margin: 10px 0;
+  padding: 0 10px; border-right: 1px solid #ccc;}
+#bottom-menu li a{text-decoration: none; color: #444;}
+#bottom-menu li:last-child{border: none;}
+
+/* weather 스타일 */
+#weather_box{
+	width: 35vw;
+	aspect-ratio: 1.25;
+	/* height: 355px; */
+	border: 1px solid #8B8989;
+	border-radius: 10px;
+	margin: 40px auto;
+	/*float: right;*/
+	position: relative;
+}
+#weather_title p{
+	font-size: 1.7vw;
+	text-align: left;
+	margin: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+	font-family: 'SBAggroM';
+}
+#weather_info{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 0;
+  padding-top: 70px;
+}
+.SeoulIcon{
+	width: 40%;
+	display: flex;
+  align-items: center;
+}
+.weather-icons{
+	 width: 100%;
+   height: 70%;
+}
+#weather_info_right{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.SeoulNowtemp{
+	font-size: 3vw;
+	margin: 0;
+	margin-bottom: 10%;
+}
+.Seoul{
+  font-size: 1vw;
+  margin: 0;
+  margin-bottom: 10%;
+}
+.SeoulLowtemp{
+	font-size: 1.2vw;
+	color: blue;
+	margin: 0;
+}
+.SeoulHightemp{
+	font-size: 1.2vw;
+	color: red;
+	margin: 0;
+}
+.tempslice{
+	font-size: 1.2vw;
+}
+#weather_info_bottom{
+	display: flex;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1vw;
+  position: absolute;
+  bottom: 0;
+}
+.texts{
+	font-size: 1vw;
+	color: gray;
+}
+.pressure,
+.humidity,
+.wind{
+	font-size: 1vw;
+}
+
+/* 태블릿 기준 - 780px 이상 */
+@media screen and (min-width: 780px) {
+  header{height: 350px;}
+  nav #main-nav li{margin: 0 40px;}
+  #main-pic img{height: 290px;}
+  section{height: 380px;}
+  #intro, #choice{float: left; width: 50%;}
+  #map{clear: both;}
+  #map .photo{display: block; float: left; margin-right: 50px;}
+}
+
+/* pc 기준 - 1200px 이상 */
+@media screen and (min-width: 1200px) {
+  #container{width: 1200px; margin: 0 auto;}
+  header{height: 380px;}
+  nav #main-nav li{margin: 0 50px;}
+  #main-pic img{height: 320px;}
+  section{height: 350px;}
+  #intro, #choice, #map{width: 100%; padding: 10px 5%;}
+  section .content .photo{display: block;}
+  section p{line-height: 2.5;}
+  #intro .photo, #map .photo{float:left; margin-right: 20px;}
+  #choice .photo{float: right; margin-right: 50px;}
+}

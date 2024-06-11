@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 절대 단위 : px(픽셀) - 모니터의 한 화면을 구성하는 사각형 1개의 크기*/
+    /* 상대단위 
+       em - 부모 요소의 텍스트 크기에 상대적인 크기를 가짐
+       rem - html 태그의 텍스트 크기에 상대적인 크기를 가짐
+       vw - 뷰포트의 너비를 기준으로 상대적인 크기를 가짐
+       vh - 뷰포트의 높이를 기준으로 상대적인 크기를 가짐
+    */
+    body{
+      font-size: 20px;
+    }
+    .p1{
+      font-size: 2em; /* 2 x 20px = 40px*/
+    }
+    .p2{
+      font-size: 2rem; /* 2 x 16px = 32px*/
+    }
+    .p3{
+      /* 1500px x 1/100 = 15px*/
+      /* 브라우저 크기의 1% */
+      font-size: 1vw; 
+    }
+    .p4{
+      font-size: 2vw;
+    }
+  </style>
+</head>
+<body>
+  <div>16px: success</div>
+  <p class="p1">2em: success</p>
+  <p class="p2">2rem: success</p>
+  <p class="p3">1vw: success</p>
+  <p class="p4">2vw: success</p>
+</body>
+</html>

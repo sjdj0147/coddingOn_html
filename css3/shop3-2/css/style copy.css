@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* 공통 스타일 */
+*{margin: 0; padding: 0;}
+#container{width: 100%;}
+
+:root{
+  --text-color: rgb(237, 237, 237);
+}
+a{
+  text-decoration: none; 
+  color: var(--text-color);
+}
+h1, h2{text-align: center; margin: 20px}
+
+/* PC 기준 */
+/* header 스타일(공통) */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 110);
+}
+.navbar_logo{
+  font-size: 24px;
+  padding-left: 20px;
+}
+.navbar_menu{
+  display: flex;
+  list-style: none;
+  margin-right: 15%;
+  padding-left: 0;
+}
+.navbar_menu li{padding: 20px 24px;}
+.navbar_menu li:hover{
+  background-color: rgb(2, 174, 222);
+  border-radius: 4px;
+}
+.navbar_toggleBtn{
+  position: absolute;
+  right: 30px;
+  font-size: 24px;
+  display: none;
+}
+#main{
+  width: 80%;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+/* index 스타일 */
+#main #contents{width: 80%; margin: 20px auto;}
+#main #contents h1{margin: 20px;}
+#main #contents .main_pic{width: 300px; margin: 0 auto;}
+#main #contents img{border-radius: 5px;}
+
+/* product 스타일 */
+#main #contents p{text-align: justify;}
+
+/* board 스타일 */
+#main #contents table{
+  width: 90%;
+  border: 2px solid #ccc;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+#main #contents table th, td{
+  border: 1px dotted #ccc;
+  height: 40px;
+  text-align: center;
+}
+#main #contents table thead{
+  background-color: #eee;
+}
+
+/* login 스타일 */
+#main #contents form{
+  width: 440px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+#main #contents form ul li{
+  list-style: none;
+  margin: 20px;
+  /* line-height: 3; */
+}
+/* 레이블에 크기를 설정하고 float로 배치함 */
+#main #contents form label{
+  width: 80px;
+  float: left;
+}
+
+/* 모바일 기준 - 768px 미만 */
+@media screen and (max-width: 768px){
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  .navbar_menu{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* display: none; */
+  }
+  .navbar_menu li{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+  }
+  .navbar_toggleBtn{display: block;}
+  .navbar_menu.active{display: flex;}
+  
+  #main #contents{width: 400px;}
+  #main #contents p{width: 400px;}
+  #main #contents table{width: 400px;}
+  #main #contents form{width: 400px;}
+}
