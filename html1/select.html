@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수강신청</title>
+</head>
+<body>
+  <div id="content">
+    <form action="register.jsp" method="post">
+        <fieldset>
+            <legend>수강 신청</legend>
+            <ul>
+                <li>
+                    <label for="id" class="reg">학과번호</label>
+                    <input type="text" id="id" name="id" title="학과 번호 입력">
+                </li>
+                <li>
+                    <label for="major" class="reg">학과</label>
+                    <select id="major" name="major">
+                        <optgroup label="공과대학">
+                            <option value="software" selected>소프트웨어학과</option>
+                            <option value="mechanic">기계공학과</option>
+                            <option value="electric">전기전자공학과</option>
+                            <option value="archi">건축공학과</option>
+                        </optgroup>
+                        <optgroup label="경영대학">
+                            <option value="경영학" selected>경영학과</option>
+                            <option value="경제학">경제학과</option>
+                            <option value="회계학">회계학과</option>
+                        </optgroup>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <div>
+            <button type="submit">신청하기</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
