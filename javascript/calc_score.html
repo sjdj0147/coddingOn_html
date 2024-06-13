@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let score = prompt('당신의 점수를 입력하세요','100');
+        let grade ='';
+
+
+        if(score<0 || score>100 || isNaN(score)){
+            alert('점수를 잘못 입력했습니다')
+        }else{
+            if(90<=score){
+                document.write('A학점입니다.</br>');
+            }else if(80<=score){
+                document.write('B학점입니다.</br>');
+            }else if(70<=score){
+                document.write('C학점입니다.</br>');
+            }else if(60<=score){
+                document.write('D학점입니다.</br>');
+            }
+            else{
+                document.write('F학점입니다.</br>');
+            }
+            document.write('점수는 '+score+'점입니다.')
+        }
+
+
+    </script>
+</body>
+</html>

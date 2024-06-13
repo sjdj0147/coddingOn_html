@@ -1,7 +1,0 @@
-/* event */
-#item{width: 420px; margin: 40px auto; position: relative;}
-#item img{opacity: 0.9; border-radius: 5px;}
-.btn_show{position: absolute; bottom: 20px; left: 20px;}
-.text{width: 400px; display:none;  padding: 5px;}
-.text h4{margin: 16px 0;}
-.text p{line-height: 1.7em;}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        while(true){
+            let key = prompt('값을 입력하세요');
+            if(key==='y' || key ==='Y'){
+                alert('계속 반복');
+            }
+            else if(key==='n'|| key ==='N'){
+                alert('반복 중단');
+                break;
+            }
+            else{
+                alert("값을 잘못 입력하셨습니다.");
+            }
+        }
+        document.write('<h1>프로그램 종료</h1>')
+    </script>
+</body>
+</html>
