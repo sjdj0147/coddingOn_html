@@ -8,13 +8,30 @@
 <body>
     <script>
         let num = prompt('숫자를 입력하세요','1');
-        num=Number(num);
-        if(num%2==0){
-            document.write(num+' 는 짝수입니다.');
+        if(num != null && !isNaN(num)){
+            num = Number(num);
+            if(num%2==0){
+                document.write(`${num}는 짝수입니다.`)
+            }
+            else{
+                document.write(`${num}는 홀수입니다.`)
+            }
         }
         else{
-            document.write(num+' 는 홀수 입니다.')
+            document.write('입력이 취소되었습니다.')
         }
+        // if(num == null || isNaN(num)){
+        //     document.write('입력이 취소되었습니다.');
+        // }
+        // else{
+        //     num=Number(num);
+        //     if(num%2==0){
+        //         document.write(num+' 는 짝수입니다.');
+        //     }
+        //     else{
+        //         document.write(num+' 는 홀수 입니다.')
+        //     }
+        // }
     </script>
 </body>
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서(Document)에 접근 및 제어</title>
+    <style>
+        div{
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="blue" class="box">1</div>
+        <div id="red" class="box">2</div>
+        <p>행복한 하루</p>
+        <p>즐거운 하루</p>
+    </div>
+    <script>
+        let box1 = document.getElementById('blue');
+        box1.style.color = 'blue';
+        let boxes = document.getElementsByClassName('box');
+        console.log(boxes[1]);
+
+        let p = document.getElementsByTagName('p');
+        console.log(p);
+
+        let box2 = document.querySelector('#red');
+        console.log(box2);
+
+        let boxAll = document.querySelectorAll('.box');
+        console.log(boxAll);
+        boxAll[1].style = 'color:orange';
+    </script>
+</body>
+</html>

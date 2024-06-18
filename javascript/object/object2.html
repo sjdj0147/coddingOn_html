@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 자료형</title>
+</head>
+<body>
+    <h2>객체 자료형</h2>
+    <script>
+        let car = {
+            brand:'ionic6',
+            color:'silver',
+            cc:2500,
+            charge:()=>{
+                alert('전기로 충전합니다.')
+            }
+        }
+
+        document.write(`브랜드이름: ${car.brand}<br>`)
+        document.write(`색상: ${car.color}<br>`)
+        document.write(`배기량: ${car.cc}<br>`)
+        car.charge();
+    </script>
+</body>
+</html>

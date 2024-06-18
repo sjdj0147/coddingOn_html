@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태그와 노드</title>
+</head>
+<body>
+    <div id="parent">
+        Text
+        <div id="two">div 두번째 Text</div>
+        <div id="three">div 새번째 Text</div>
+    </div>
+    <script>
+        let parent = document.getElementById('parent')
+        console.log(parent);
+        let children = parent.children;
+        console.log(children);
+        let childNodes =  parent.childNodes;
+        console.log(childNodes);
+        let child1 = document.createElement('div');
+        child1.innerText = '네번째 Text';
+        parent.appendChild(child1)
+
+    </script>
+</body>
+</html>

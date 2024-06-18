@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* vh  = view -height(1500px)/100 =15px */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+}
+#container div{
+    margin: 10px;
+}
+#today{
+    font-size: 1.2em;
+}
+#clock{
+    display: flex;
+    justify-content: center;
+    font-size: 1.1em;
+}

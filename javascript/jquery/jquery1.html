@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            // $('#show').text('<h2>안녕~</h2>');
+            $('#show').html('<h2>안녕~</h2>').css({color:'red',fontSize:'24px'});
+            $('.pic').html("<img src='./images/복숭아.jpg' alt ='복숭아'>").children().css('border-radius','15px')
+            $('.pic>img').css({BorderRadius:'5px'});
+        });
+
+    </script>
+    
+    <p id="show"></p>
+    <div class="pic">
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person={
+            name:'이강인',
+            age:23,
+            isMerried:false,
+            play:function(){
+                alert('골을 넣는다!');
+            }
+        };
+        console.log(`이름: ${person.name}`);
+        console.log(`나이: ${person.age}`);
+        person.play();
+
+
+        let book={
+            title:'웹 표준의 정석',
+            author:'고경희',
+            page:600,
+            price:30000,
+            info:function(){
+                alert(this.title+' 책의 분량은 '+this.page+"페이지");
+            }
+        };
+        document.write('제목: '+book.title)
+        document.write('저자: '+book.author)
+        book.info();
+    </script>
+</body>
+</html>

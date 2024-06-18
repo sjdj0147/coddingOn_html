@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>공의 속도(구속) 변환 프로그램</h3>
+    <p>공의 속도 km를 mile로 변환하는 프로그램이빈다.</p>
+    <script>
+        const RATE_KPH_MPH=1.609;  
+        let mph,kph;
+
+        kph=prompt('구속(공의 속도)을 입력하세요: ');
+
+        if( kph !== null && !isNaN(kph)){
+
+            console.log(typeof(kph));
+            kph = parseFloat(kph);
+            mph= kph/RATE_KPH_MPH;
+    
+            document.write(`${kph}km는 ${mph.toFixed(2)}mile입니다.`)
+        }
+        else{
+            document.write('입력이 취소되었습니다.');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let now = new Date();
+        document.write(`현재 년도 : ${now.getFullYear()} <br>`);
+        document.write(`현재 월 : ${now.getMonth()} <br>`);
+        document.write(`현재 일 : ${now.getDate()} <br>`);
+        document.write(`현재 요일 : ${now.getDay()} <br>`);
+        document.write(`현재 시 : ${now.getHours()} <br>`);
+        document.write(`현재 분 : ${now.getMinutes()} <br>`);
+        document.write(`현재 초 : ${now.getSeconds()} <br>`);
+        document.write(`현재까지의 시간 : ${now.getTime()/1000/24/60/60} <br>`);
+        
+        let day  = Math.round(now.getTime()/1000*24*60*60);
+        document.write(`현재까지의 시간${day} 일<br>`)
+        let today = new Date('2024.06.17')
+        console.log(today);
+
+        let theDay = new Date('2024-05-29')
+        console.log(theDay);
+
+        let passed_time = today.getTime() - theDay.getTime();
+        passed_time = Math.round(passed_time/(1000*24*60*60))
+        console.log(`개강후 현재까지 ${passed_time} 일 지났습니다.`);
+
+    </script>
+</body>
+</html>
